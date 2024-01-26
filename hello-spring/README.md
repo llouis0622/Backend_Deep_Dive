@@ -37,3 +37,24 @@
 - 컨트롤러에서 리턴 값으로 문자를 반환하면 뷰 리졸버가 화면을 찾아서 처리
   - 스프링 부트 템플릿엔진 기본 viewName 매핑
   - resources : templates/ + {ViewName} + .html
+
+---
+
+## 2. 스프링 웹 개발 기초
+
+### 1. 정적 컨텐츠
+- 파일을 그대로 웹브라우저로 전달
+- 스프링 부트 정적 컨텐츠 기능
+
+### 2. MVC와 템플릿 엔진
+- MVC : Model, View, Controller
+- View : 화면에 관련된 일
+- Model, Controller : 비즈니스 로직 및 서버 관리
+
+### 3. API
+- `@ResponseBody`
+  - HTTP의 BODY에 문자 내용을 직접 반환
+  - `viewResolver` -> `HttpMessageConverter` 동작
+  - 기본 문자처리 : `StringHttpMessageConverter`
+  - 기본 객체처리 : `MappingJacson2HttpMessageConverter`
+  - byte 처리 등 기타 여러 `HttpMessageConverter`가 기본으로 등록
