@@ -140,3 +140,15 @@
 - 기본 CRUD 기능도 스프링 데이터 JPA가 모두 제공
 - `findByName()`, `findByEmail()`처럼 메서드 이름만으로 조회 기능 제공
 - 페이징 기능 자동 제공
+
+## 7. AOP
+
+### 1. AOP가 필요한 상황
+- 모든 메소드의 호출 시간을 측정하고 싶다면?
+- 공통 관심 사항(Cross-Cutting Concern) VS 핵심 관심 사항(Core Concern)
+- 회원 가입 시간, 회원 조희 시간을 측정하고 싶다면?
+
+### 2. AOP 적용
+- AOP(Aspect Oriented Programming)
+- 공통 관심 사항(Cross-Cutting Concern) VS 핵심 관심 사항(Core Concern) 분리
+- 
