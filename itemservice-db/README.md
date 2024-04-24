@@ -77,3 +77,31 @@
 ### 6. 테스트 - 스프링 부트와 임베디드 모드
 - 데이터베이스에 별다른 설정 없음 -> 임베디드 데이터베이스 사용
 
+## 4. 데이터 접근 기술 - MyBatis
+
+### 1. MyBatis 소개
+- JdbcTemplate보다 더 많은 기능을 제공하는 SQL Mapper
+- SQL을 XML에 편리하게 작성 가능
+- 동적 쿼리 편리하게 작성 가능
+
+### 2. MyBatis 설정
+- mybatis-spring-boot-starter 라이브러리 사용
+
+### 3. MyBatis 적용
+- 마이바티스를 스프링에 편리하게 통합해서 사용 가능
+- 매퍼 구현체 사용 -> 스프링 예외 추상화 함께 적용
+- 데이터베이스 커넥션, 트랜잭션과 관련된 기능 함께 연동 및 동기화
+
+### 4. MyBatis 기능 정리 1 - 동적 쿼리
+- 동적 SQL
+  - if
+  - choose(when, otherwise)
+  - trim(where, set)
+  - foreach
+
+### 5. MyBatis 기능 정리 2 - 기타 기능
+- 어노테이션으로 SQL 작성 : @Insert, @Update, @Delete, @Select
+- 문자열 대체 : #{}, ${}
+- 재사용 가능한 SQL 조각
+- Result Maps
+
